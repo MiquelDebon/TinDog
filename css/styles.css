@@ -7,19 +7,24 @@ body{
 
 h1{
   font-family: Montserrat;
-  font-weight: bolder;
   font-size: 3.5rem;
+  font-weight: bolder;
   line-height: 1.3;
   color: white;}
 
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;;}
+
 h3{
+  font-size: 1.3rem;
   font-weight: bold;
-  font-size: 1.1rem;
 }
 
 p{
   font-weight: light;
-  color: #BCB3B6
+  color: #BCB3B6;
+  font-size: 1.2rem;
 }
 
 
@@ -79,4 +84,32 @@ p{
 
 .feature-box{
   padding: 0 5%;
+}
+
+/* Testimonio */
+#testimonials{
+  text-align: center;
+  background-color:#EB5E55;
+  color: #fff;}
+
+.testimonial-image{
+  /* border-style: solid; */
+  border-radius: 50%;
+  width: 30%;
+  margin: 8px;
+}
+
+#press{
+  background-color:#EB5E55;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo{
+  width: 15%;
+  margin: 0 20px;
+}
+
+.carousel-item{
+  padding: 7% 15%;
 }

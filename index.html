@@ -51,9 +51,9 @@
         <div class="row">
           <div class="col-lg-6">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <div class="margin-bottom" >
+            <div class="margin-bottom">
               <button type="button" class="btn btn-dark btn-lg download-button"> <i class="fa-brands fa-apple"></i> Download</button>
-              <button type="button"class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-android"></i> Download</button>
+              <button type="button" class="btn btn-outline-light btn-lg"> <i class="fa-brands fa-android"></i> Download</button>
             </div>
           </div>
 
@@ -97,15 +97,43 @@
 
   <section id="testimonials">
 
-    <div class="container-fluid">
-      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-      <img src="images/dog-img.jpg" alt="dog-profile">
-      <em>Pebbles, New York</em>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-pause="hover"  data-bs-interval="3500">
 
-      <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-      <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-      <em>Beverly, Illinois</em> -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img src="images/dog-img.jpg" alt="dog-profile" class="testimonial-image">
+          <em>Pebbles, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="testimonial-image" src="images/CV_Phtoto_Miquel Debon.jpeg" alt="lady-profile">
+          <em>Miquel, Barcelona</em>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+
+
   </section>
 
 
@@ -113,11 +141,11 @@
 
   <section id="press">
 
-    <div class="container-fluid">
-      <img src="images/techcrunch.png" alt="tc-logo">
-      <img src="images/tnw.png" alt="tnw-logo">
-      <img src="images/bizinsider.png" alt="biz-insider-logo">
-      <img src="images/mashable.png" alt="mashable-logo">
+    <div>
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
     </div>
   </section>
 
