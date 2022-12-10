@@ -1,51 +1,41 @@
-#title{
-  background-color: #ff4c68;}
+/* Common CSS */
 
 body{
   font-family: Montserrat
 }
 
-h1{
+h1,h2,h3,h4,h5,h6 {
   font-family: Montserrat;
-  font-size: 3.5rem;
-  font-weight: bolder;
-  line-height: 1.3;
-  color: white;}
-
-h2{
-  font-size: 1.5rem;
-  font-weight: bold;;}
-
-h3{
-  font-size: 1.3rem;
-  font-weight: bold;
-}
+  font-weight: bold}
 
 p{
   font-weight: light;
   color: #BCB3B6;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem;}
 
 
 .container-fluid{
   padding: 5% 10%;
 }
 
-.navbarSupportedContent{
-  float: right;
-}
+.white-section{
+  color: black;
+  background-color: white;}
+
+.colored-section{
+  color: white;
+  background-color: #ff4c68}
+
 
 /* Navigation Bar */
 
+#navegation-bar{
+  margin-bottom: 13px
+}
 
 .navbar-brand{
   font-family: Ubuntu;
   font-size: 2rem;
-}
-
-#navegation-bar{
-  margin-bottom: 13px
 }
 
 .nav-item{
@@ -56,6 +46,21 @@ p{
   font-size: 1.2rem;
   font-weight: light;
 }
+
+.navbarSupportedContent{
+  float: right;
+}
+
+/* Title */
+
+#title{
+  background-color: #ff4c68;
+  margin-bottom: -200px;}
+
+.title-heading{
+  font-size: 3.5rem;
+  line-height: 1.3;}
+
 .margin-bottom{
   margin: 40px 0;}
 
@@ -66,13 +71,19 @@ p{
   transform: rotate(17deg);
   display: block;
   margin: 30px auto;
-}
+  position: relative;
+  right: 0%;}
+
 
 /* Features section */
+
 #features{
   display: block;
   margin: auto;
-  text-align: center;}
+  text-align: center;
+  background-color: white;
+  position: relative;
+  z-index: 2;}
 
 .fa-4x{
   color: #EB5E55;
@@ -81,12 +92,15 @@ p{
 .fa-4x:hover{
   color: #E74236}
 
-
 .feature-box{
   padding: 0 5%;
 }
 
+.feature-title{font-size: 1.3rem}
+
+
 /* Testimonio */
+
 #testimonials{
   text-align: center;
   background-color:#EB5E55;
@@ -104,6 +118,8 @@ p{
   text-align: center;
   padding-bottom: 3%;
 }
+.carousel-indicators{
+  margin: 1px 0 8px;}
 
 .press-logo{
   width: 15%;
@@ -112,4 +128,74 @@ p{
 
 .carousel-item{
   padding: 7% 15%;
+}
+
+.testimonial-text{
+  font-size: 1.3rem;}
+
+/* Prising */
+.card-title{
+  color: black;
+}
+
+.pricing-header{
+  font-size: 2rem;
+}
+
+/* Call to action */
+
+#cta{
+  text-align: center;
+  color: white;}
+
+.container-fluid.cta-container{
+  padding: 3% 10%}
+
+.cta-title{
+  font-size: 1.3rem;}
+
+.margin-bottom-cta{
+  margin:20px 0 0;}
+
+#footer{
+  text-align: center;
+  padding: 4% 15%;}
+
+.footer-icon{
+  padding: 5px}
+
+.footer-icon-ind{
+  margin: 0 6px;
+}
+
+.scale-icon:hover{
+  transform: scale(1.5);
+}
+
+.small-text{
+  font-size: 0.8rem;
+  margin: 0
+}
+
+@media (max-width: 1000px) {
+  #title{
+    text-align: center;
+  }
+
+  .image-iphone{
+    transform: rotate(0);
+  }
+}
+
+@media (min-width: 1000px){
+  .testimonial-image{
+    width: 20%;
+    margin: 4px;}
+
+  .press-logo{
+    width: 10%;}
+
+  .carousel-item{
+    padding: 3% 23% 3%;
+  }
 }
